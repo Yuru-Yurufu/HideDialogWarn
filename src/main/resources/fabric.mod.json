@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hide-dialog-warn",
+	"version": "${version}",
+	"name": "Hide Dialog Warn",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hide-dialog-warn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.forestotzka.yurufu.HideDialogWarn"
+		],
+		"fabric-datagen": [
+			"com.forestotzka.yurufu.HideDialogWarnDataGenerator"
+		],
+		"client": [
+			"com.forestotzka.yurufu.HideDialogWarnClient"
+		]
+	},
+	"mixins": [
+		"hide-dialog-warn.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
